@@ -2,387 +2,326 @@
 <html lang="en">
 <head>
 
-<!-- =====================================================
-     BASIC META / SEO
-===================================================== -->
+<!-- ========================================================= -->
+<!-- SEO + META -->
+<!-- ========================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Cedar Acquisitions | Institutional Real Estate Investment Firm</title>
 
 <meta name="description" content="Cedar Acquisitions is a U.S.-based real estate investment firm specializing in seller financing, subject-to acquisitions, wrap mortgages, and structured real estate exits.">
-<meta name="keywords" content="Cedar Acquisitions, Real Estate Investors, Seller Financing, Subject-To, Wrap Mortgage, Creative Real Estate, Real Estate Wholesalers">
+<meta name="keywords" content="Cedar Acquisitions, Real Estate Investors, Seller Financing, Subject-To, Wrap Mortgage, Creative Real Estate">
+<meta name="author" content="Cedar Acquisitions">
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
 
-<!-- =====================================================
-     GLOBAL STYLES
-===================================================== -->
 <style>
 
-/* ================= RESET ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+/* ========================================================= */
+/* RESET + GLOBAL */
+/* ========================================================= */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+html{scroll-behavior:smooth}
+
+body{
+background:linear-gradient(180deg,#020804,#07150c,#0b2314,#07150c,#020804);
+color:#e5f7ee;
+line-height:1.85;
+overflow-x:hidden;
 }
 
-html {
-  scroll-behavior: smooth;
+/* ========================================================= */
+/* HEADER (PRO MOBILE OPTIMIZED) */
+/* ========================================================= */
+header{
+position:fixed;
+top:0;
+width:100%;
+height:78px;
+z-index:1000;
+background:rgba(245,255,250,.95);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(0,0,0,.15);
 }
 
-/* ================= BODY ================= */
-body {
-  background: linear-gradient(
-    180deg,
-    #020804,
-    #07150c,
-    #0b2314,
-    #07150c,
-    #020804
-  );
-  color: #e5f7ee;
-  line-height: 1.8;
+.header-inner{
+max-width:1400px;
+margin:auto;
+height:100%;
+padding:0 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 90px;
-  z-index: 1000;
-  background: rgba(245, 255, 250, 0.92);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.header-inner {
-  max-width: 1400px;
-  height: 100%;
-  margin: auto;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 80px;
-}
+.logo img{height:58px}
 
 /* NAV */
-nav {
-  margin-left: auto;
+nav{position:relative}
+nav ul{
+display:flex;
+gap:32px;
+list-style:none;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 28px;
+nav a{
+text-decoration:none;
+color:#064e3b;
+font-weight:600;
+position:relative;
+padding-bottom:4px;
 }
 
-nav a {
-  color: #064e3b;
-  font-weight: 600;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 4px;
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:2px;
+background:#22c55e;
+transition:.3s;
+}
+nav a:hover::after{width:100%}
+
+/* MOBILE */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:#064e3b;
 }
 
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: #22c55e;
-  transition: 0.3s ease;
+@media(max-width:950px){
+
+nav ul{
+position:absolute;
+top:78px;
+left:0;
+width:100%;
+background:#f0fdf4;
+flex-direction:column;
+align-items:center;
+padding:30px 0;
+gap:22px;
+display:none;
+box-shadow:0 12px 30px rgba(0,0,0,.2);
 }
 
-nav a:hover::after {
-  width: 100%;
+nav ul.active{display:flex}
+.menu-toggle{display:block}
+
 }
 
-/* =====================================================
-   HERO SECTION
-===================================================== */
-.hero {
-  min-height: 100vh;
-  padding: 200px 60px 140px;
-  background:
-    linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)),
-    url("https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698221aafa4c3e4e8d5465a8.png")
-    center / cover no-repeat;
+/* ========================================================= */
+/* HERO */
+/* ========================================================= */
+.hero{
+min-height:100vh;
+padding:150px 20px 120px;
+background:
+linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
+url("https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698221aafa4c3e4e8d5465a8.png")
+center/cover no-repeat;
+display:flex;
+align-items:center;
 }
 
-.hero-inner {
-  max-width: 1100px;
+.hero-inner{
+max-width:1000px;
+margin:auto;
+text-align:center;
 }
 
-.hero h1 {
-  font-size: 56px;
-  margin-bottom: 28px;
+.hero h1{
+font-size:54px;
+margin-bottom:25px;
 }
 
-.hero p {
-  font-size: 22px;
-  color: #bbf7d0;
-  margin-bottom: 40px;
+.hero p{
+font-size:22px;
+color:#bbf7d0;
+margin-bottom:40px;
 }
 
-.hero a {
-  padding: 16px 42px;
-  background: #22c55e;
-  color: #052e16;
-  font-weight: 700;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s ease;
+.hero-btn{
+background:#22c55e;
+color:#052e16;
+padding:15px 45px;
+border-radius:6px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+.hero-btn:hover{background:#16a34a}
+
+/* ========================================================= */
+/* SECTION BASE */
+/* ========================================================= */
+section{padding:120px 20px}
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:#a7f3d0;
+margin-bottom:18px;
 }
 
-.hero a:hover {
-  background: #16a34a;
+.section-desc{
+max-width:1000px;
+margin:0 auto 70px;
+text-align:center;
+color:#bbf7d0;
+font-size:19px;
 }
 
-/* =====================================================
-   SECTION BASE
-===================================================== */
-section {
-  padding: 140px 60px;
+/* ========================================================= */
+/* GRID */
+/* ========================================================= */
+.grid-3,.grid-2{
+max-width:1200px;
+margin:auto;
+display:grid;
+gap:40px;
+}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+
+@media(max-width:1000px){
+.grid-3,.grid-2{grid-template-columns:1fr}
 }
 
-.section-title {
-  text-align: center;
-  font-size: 42px;
-  color: #a7f3d0;
-  margin-bottom: 20px;
+/* ========================================================= */
+/* CARD */
+/* ========================================================= */
+.card{
+background:linear-gradient(180deg,#0c2315,#081a10);
+padding:40px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.15);
+transition:.4s;
+}
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 50px rgba(34,197,94,.3);
+}
+.card h3{
+color:#a7f3d0;
+margin-bottom:15px;
 }
 
-.section-desc {
-  max-width: 1100px;
-  margin: 0 auto 80px;
-  text-align: center;
-  color: #bbf7d0;
-  font-size: 19px;
+/* ========================================================= */
+/* CASE SLIDER */
+/* ========================================================= */
+.case-slider{max-width:1100px;margin:auto;overflow:hidden}
+.case-track{display:flex;transition:transform .6s ease}
+.case-slide{
+min-width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:45px;
+align-items:center;
+}
+.case-slide img{
+width:100%;
+border-radius:16px;
+box-shadow:0 25px 45px rgba(0,0,0,.5);
+}
+@media(max-width:950px){
+.case-slide{grid-template-columns:1fr}
+}
+.case-nav{text-align:center;margin-top:25px}
+.case-nav button{
+background:#22c55e;
+border:none;
+padding:8px 14px;
+border-radius:50%;
+margin:0 6px;
+cursor:pointer;
 }
 
-/* =====================================================
-   GRIDS & CARDS
-===================================================== */
-.grid-3,
-.grid-2 {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  gap: 40px;
+/* ========================================================= */
+/* FAQ */
+/* ========================================================= */
+.faq-item{
+background:#0c2315;
+border-radius:12px;
+margin-bottom:18px;
+border:1px solid rgba(255,255,255,.2);
+overflow:hidden;
+}
+.faq-question{
+padding:18px;
+cursor:pointer;
+font-weight:600;
+position:relative;
+}
+.faq-question::after{
+content:"+";
+position:absolute;
+right:20px;
+}
+.faq-item.active .faq-question::after{
+transform:rotate(45deg);
+}
+.faq-answer{
+max-height:0;
+overflow:hidden;
+padding:0 18px;
+transition:.4s;
+color:#bbf7d0;
+}
+.faq-item.active .faq-answer{
+max-height:400px;
+padding-bottom:18px;
 }
 
-.grid-3 {
-  grid-template-columns: repeat(3, 1fr);
+/* ========================================================= */
+/* FOOTER (PRO MOBILE) */
+/* ========================================================= */
+footer{
+background:linear-gradient(180deg,#ecfdf5,#d1fae5);
+color:#064e3b;
+padding:80px 20px 40px;
 }
 
-.grid-2 {
-  grid-template-columns: repeat(2, 1fr);
+.footer-inner{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:45px;
 }
 
-.card {
-  background: linear-gradient(180deg, #0c2315, #081a10);
-  border-radius: 22px;
-  padding: 46px;
-  border: 1px solid rgba(255,255,255,0.15);
-  transition: 0.4s ease;
+.footer-logo img{height:60px;margin-bottom:15px}
+
+.footer-links{
+display:grid;
+grid-template-columns:repeat(2,auto);
+gap:12px 30px;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(34,197,94,0.35);
+.footer-links a{
+color:#064e3b;
+text-decoration:none;
+font-weight:600;
+position:relative;
 }
-
-.card h3 {
-  color: #a7f3d0;
-  margin-bottom: 18px;
+.footer-links a::after{
+content:"";
+position:absolute;
+left:0;bottom:0;
+width:0;height:2px;
+background:#22c55e;
+transition:.3s;
 }
+.footer-links a:hover::after{width:100%}
 
-/* =====================================================
-   WHY CHOOSE CEDAR (DETAILED)
-===================================================== */
-#why-cedar .card p {
-  color: #bbf7d0;
-}
-
-/* =====================================================
-   STRATEGIES (DETAILED)
-===================================================== */
-#strategies .card p {
-  color: #bbf7d0;
-}
-
-/* =====================================================
-   CASE STUDIES SLIDER
-===================================================== */
-.case-slider {
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.case-track {
-  display: flex;
-  transition: transform 0.6s ease;
-}
-
-.case-slide {
-  min-width: 100%;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.case-slide img {
-  width: 100%;
-  border-radius: 22px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-}
-
-.case-nav {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.case-nav button {
-  background: #22c55e;
-  color: #052e16;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 16px;
-  cursor: pointer;
-  margin: 0 6px;
-}
-
-/* =====================================================
-   FAQ SECTION
-===================================================== */
-.faq-item {
-  background: #0c2315;
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 14px;
-  margin-bottom: 18px;
-  overflow: hidden;
-}
-
-.faq-question {
-  padding: 22px;
-  font-weight: 700;
-  cursor: pointer;
-  position: relative;
-}
-
-.faq-question::after {
-  content: "+";
-  position: absolute;
-  right: 22px;
-  font-size: 22px;
-}
-
-.faq-item.active .faq-question::after {
-  transform: rotate(45deg);
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 22px;
-  color: #bbf7d0;
-  transition: 0.4s ease;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 500px;
-  padding-bottom: 22px;
-}
-
-/* =====================================================
-   CONTACT
-===================================================== */
-.contact-embed {
-  max-width: 900px;
-  margin: auto;
-}
-
-/* =====================================================
-   FOOTER
-===================================================== */
-footer {
-  background: linear-gradient(180deg, #ecfdf5, #d1fae5);
-  color: #064e3b;
-  padding: 90px 60px 50px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 60px;
-}
-
-.footer-logo img {
-  height: 82px;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 12px 40px;
-}
-
-.footer-links a {
-  color: #064e3b;
-  font-weight: 600;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 4px;
-}
-
-.footer-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: #22c55e;
-  transition: 0.3s ease;
-}
-
-.footer-links a:hover::after {
-  width: 100%;
-}
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
-@media (max-width: 1100px) {
-  .grid-3,
-  .grid-2,
-  .case-slide {
-    grid-template-columns: 1fr;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
+@media(max-width:950px){
+.footer-inner{grid-template-columns:1fr;text-align:center}
+.footer-links{justify-content:center}
 }
 
 </style>
@@ -390,275 +329,242 @@ footer {
 
 <body>
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
 <header>
-  <div class="header-inner">
-    <div class="logo">
-      <img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png" alt="Cedar Acquisitions Logo">
-    </div>
+<div class="header-inner">
+<div class="logo">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
+</div>
 
-    <nav>
-      <ul>
-        <li><a href="#strategies">Strategies</a></li>
-        <li><a href="#cases">Case Studies</a></li>
-        <li><a href="#faq">FAQs</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="navLinks">
+<li><a href="#strategies">Strategies</a></li>
+<li><a href="#cases">Case Studies</a></li>
+<li><a href="#faq">FAQs</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-inner">
-    <h1>Strategic Real Estate Acquisitions Built for Certainty, Speed & Long-Term Value</h1>
-    <p>
-      Cedar Acquisitions partners with property owners nationwide to deliver
-      flexible, tax-efficient real estate exit strategies backed by institutional discipline.
-    </p>
-    <a href="#contact">Contact Us</a>
-  </div>
+<div class="hero-inner">
+<h1>Strategic Real Estate Acquisitions Built for Certainty, Speed & Long-Term Value</h1>
+<p>
+Cedar Acquisitions partners with property owners nationwide to deliver flexible,
+tax-efficient exit strategies through disciplined underwriting and institutional execution.
+</p>
+<a href="#contact" class="hero-btn">Start a Confidential Conversation</a>
+</div>
 </section>
 
-<!-- =====================================================
-     WHY CEDAR
-===================================================== -->
-<section id="why-cedar">
-  <h2 class="section-title">Why Choose Cedar Acquisitions</h2>
-  <p class="section-desc">
-    We are not transactional buyers. We are structured capital partners focused on certainty and execution.
-  </p>
+<!-- WHY CEDAR -->
+<section>
+<h2 class="section-title">Why Choose Cedar Acquisitions</h2>
+<p class="section-desc">
+Our process is designed for sellers who value certainty, professionalism, and structured solutions.
+</p>
 
-  <div class="grid-3">
-    <div class="card">
-      <h3>Institutional Underwriting</h3>
-      <p>
-        Every transaction is evaluated using conservative assumptions,
-        legal review, and structured risk management standards.
-      </p>
-    </div>
+<div class="grid-3">
 
-    <div class="card">
-      <h3>Creative Liquidity Solutions</h3>
-      <p>
-        We unlock value through seller financing, subject-to, and hybrid structures
-        without forcing sellers into distressed market sales.
-      </p>
-    </div>
+<div class="card">
+<h3>Institutional Underwriting</h3>
+<p>
+Every acquisition is evaluated through conservative financial modeling,
+risk-adjusted projections, and legal review to ensure sustainable execution.
+</p>
+</div>
 
-    <div class="card">
-      <h3>Certainty of Close</h3>
-      <p>
-        Dedicated capital, clear timelines, and attorney-reviewed documentation
-        ensure smooth execution from LOI to closing.
-      </p>
-    </div>
-  </div>
+<div class="card">
+<h3>Creative Capital Structures</h3>
+<p>
+We specialize in seller financing, subject-to transactions, wrap mortgages,
+and hybrid capital stacks tailored to maximize seller outcomes.
+</p>
+</div>
+
+<div class="card">
+<h3>Certainty of Close</h3>
+<p>
+Dedicated capital sources, structured timelines, and documented execution
+standards eliminate uncertainty and reduce transaction friction.
+</p>
+</div>
+
+</div>
 </section>
 
-<!-- =====================================================
-     STRATEGIES
-===================================================== -->
+<!-- STRATEGIES -->
 <section id="strategies">
-  <h2 class="section-title">Investment Strategies</h2>
-  <p class="section-desc">
-    Cedar deploys multiple acquisition strategies tailored to seller objectives and asset profiles.
-  </p>
+<h2 class="section-title">Investment Strategies</h2>
+<p class="section-desc">
+Cedar deploys multiple acquisition structures designed to align seller goals
+with long-term asset performance and disciplined capital management.
+</p>
 
-  <div class="grid-2">
-    <div class="card">
-      <h3>Seller Financing</h3>
-      <p>
-        Enables sellers to convert equity into predictable income while deferring capital gains
-        and maintaining secured positions.
-      </p>
-    </div>
+<div class="grid-2">
 
-    <div class="card">
-      <h3>Subject-To Acquisitions</h3>
-      <p>
-        Preserves existing favorable financing while providing immediate liquidity
-        and relief from ownership responsibilities.
-      </p>
-    </div>
+<div class="card">
+<h3>Seller Financing</h3>
+<p>
+Allows sellers to convert property equity into predictable monthly income
+while potentially deferring capital gains. Structured notes are secured,
+professionally documented, and include defined repayment schedules.
+</p>
+</div>
 
-    <div class="card">
-      <h3>Wrap Mortgages</h3>
-      <p>
-        Creates simplified debt structures with professional servicing,
-        transparent accounting, and clear disclosures.
-      </p>
-    </div>
+<div class="card">
+<h3>Subject-To Acquisitions</h3>
+<p>
+Cedar acquires properties while preserving existing favorable financing.
+This structure enables speed and liquidity while maintaining loan continuity.
+</p>
+</div>
 
-    <div class="card">
-      <h3>Hybrid Stack Structures</h3>
-      <p>
-        Combines upfront liquidity, preferred income, and refinancing upside
-        to maximize seller outcomes.
-      </p>
-    </div>
-  </div>
+<div class="card">
+<h3>Wrap Mortgages</h3>
+<p>
+A single structured note wraps the underlying loan, simplifying payments
+and ensuring full legal compliance with transparent disclosures.
+</p>
+</div>
+
+<div class="card">
+<h3>Hybrid Stack Structures</h3>
+<p>
+Combines upfront liquidity with preferred equity income and refinancing
+upside to maximize total seller proceeds.
+</p>
+</div>
+
+</div>
 </section>
 
-<!-- =====================================================
-     CASE STUDIES (2)
-===================================================== -->
+<!-- CASE STUDIES -->
 <section id="cases">
-  <h2 class="section-title">Case Studies</h2>
+<h2 class="section-title">Case Studies</h2>
 
-  <div class="case-slider">
-    <div class="case-track" id="caseTrack">
+<div class="case-slider">
+<div class="case-track" id="caseTrack">
 
-      <div class="case-slide">
-        <img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b5dee0708e42c8501a863.jpeg" alt="Florida Property">
-        <div>
-          <h3>Florida Investment Property</h3>
-          <p>
-            Structured acquisition delivering liquidity without disrupting
-            existing financing while protecting seller interests.
-          </p>
-        </div>
-      </div>
+<div class="case-slide">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b5dee0708e42c8501a863.jpeg">
+<div>
+<h3>Florida Investment Property</h3>
+<p>
+Structured acquisition delivering liquidity without disrupting existing
+financing, enabling seamless seller exit.
+</p>
+</div>
+</div>
 
-      <div class="case-slide">
-        <img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b5d3d52c952d436b92307.webp" alt="Virginia Property">
-        <div>
-          <h3>921 W Beverley St, Staunton, VA</h3>
-          <p>
-            Seller-financed transaction structured to resolve estate planning needs
-            with accelerated closing.
-          </p>
-        </div>
-      </div>
+<div class="case-slide">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b5d3d52c952d436b92307.webp">
+<div>
+<h3>921 W Beverley St, Staunton, VA</h3>
+<p>
+Seller-financed structured transaction completed on accelerated timeline
+to resolve estate objectives.
+</p>
+</div>
+</div>
 
-    </div>
+</div>
+</div>
 
-    <div class="case-nav">
-      <button onclick="slideCase(0)">•</button>
-      <button onclick="slideCase(1)">•</button>
-    </div>
-  </div>
+<div class="case-nav">
+<button onclick="slideCase(0)">•</button>
+<button onclick="slideCase(1)">•</button>
+</div>
 </section>
 
-<!-- =====================================================
-     FAQ
-===================================================== -->
+<!-- FAQ -->
 <section id="faq">
-  <h2 class="section-title">Frequently Asked Questions</h2>
+<h2 class="section-title">Frequently Asked Questions</h2>
 
-  <div class="faq-item">
-    <div class="faq-question">Who pays closing costs and legal fees?</div>
-    <div class="faq-answer">
-      Cedar Acquisitions typically covers standard closing and legal costs,
-      unless otherwise structured in the transaction.
-    </div>
-  </div>
+<div class="faq-item">
+<div class="faq-question">Who pays closing costs?</div>
+<div class="faq-answer">Cedar typically covers standard closing and legal costs.</div>
+</div>
 
-  <div class="faq-item">
-    <div class="faq-question">How fast can Cedar close?</div>
-    <div class="faq-answer">
-      Closings can occur in as little as 7–30 days depending on structure and asset type.
-    </div>
-  </div>
+<div class="faq-item">
+<div class="faq-question">How quickly can Cedar close?</div>
+<div class="faq-answer">Closings typically occur within 7–30 days.</div>
+</div>
 
-  <div class="faq-item">
-    <div class="faq-question">Do you buy properties as-is?</div>
-    <div class="faq-answer">
-      Yes. No repairs, inspections, or cleanup are required.
-    </div>
-  </div>
+<div class="faq-item">
+<div class="faq-question">Do you buy properties as-is?</div>
+<div class="faq-answer">Yes. No repairs or cleanup required.</div>
+</div>
 
-  <div class="faq-item">
-    <div class="faq-question">Do you buy nationwide?</div>
-    <div class="faq-answer">
-      Yes, Cedar evaluates opportunities across major U.S. markets.
-    </div>
-  </div>
+<div class="faq-item">
+<div class="faq-question">Do you operate nationwide?</div>
+<div class="faq-answer">Yes, across major U.S. markets.</div>
+</div>
 
-  <div class="faq-item">
-    <div class="faq-question">Is attorney review included?</div>
-    <div class="faq-answer">
-      All transactions include attorney-reviewed documentation for seller protection.
-    </div>
-  </div>
+<div class="faq-item">
+<div class="faq-question">Are documents attorney-reviewed?</div>
+<div class="faq-answer">Yes, all agreements are professionally reviewed.</div>
+</div>
+
 </section>
 
-<!-- =====================================================
-     CONTACT
-===================================================== -->
+<!-- CONTACT -->
 <section id="contact">
-  <h2 class="section-title">Contact Cedar Acquisitions</h2>
-  <p class="section-desc">
-    All inquiries are confidential and reviewed promptly by our acquisitions team.
-  </p>
+<h2 class="section-title">Contact Cedar Acquisitions</h2>
 
-  <div class="contact-embed">
-    <iframe
-      src="https://api.leadconnectorhq.com/widget/form/h0ri58p25Mqmo7aQXF2F"
-      style="width:100%;height:750px;border:none;"
-      loading="lazy">
-    </iframe>
-  </div>
+<div style="max-width:900px;margin:auto">
+<iframe src="https://api.leadconnectorhq.com/widget/form/h0ri58p25Mqmo7aQXF2F"
+style="width:100%;height:750px;border:none;"></iframe>
+</div>
 </section>
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
 <footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-logo">
-        <img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png" alt="Cedar Acquisitions Logo">
-      </div>
-      <p>Miami, FL</p>
-      <p>Email: offers@cedaracq.com</p>
-    </div>
+<div class="footer-inner">
 
-    <div class="footer-links">
-      <a href="#strategies">Strategies</a>
-      <a href="#cases">Case Studies</a>
-      <a href="#faq">FAQs</a>
-      <a href="team.html">Team</a>
-      <a href="#contact">Contact</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms.html">Terms & Conditions</a>
-    </div>
+<div>
+<div class="footer-logo">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
+</div>
+<p>Miami, FL</p>
+<p>Email: offers@cedaracq.com</p>
+</div>
 
-    <div>
-      <p>© 2026 Cedar Acquisitions</p>
-      <p>All rights reserved.</p>
-    </div>
-  </div>
+<div class="footer-links">
+<a href="#strategies">Strategies</a>
+<a href="#cases">Case Studies</a>
+<a href="#faq">FAQs</a>
+<a href="team.html">Team</a>
+<a href="#contact">Contact</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms.html">Terms & Conditions</a>
+</div>
+
+<div>
+<p>© 2026 Cedar Acquisitions</p>
+<p>All rights reserved.</p>
+</div>
+
+</div>
 </footer>
 
-<!-- =====================================================
-     SCRIPTS
-===================================================== -->
 <script>
-/* FAQ ACCORDION */
-document.querySelectorAll('.faq-question').forEach(q => {
-  q.addEventListener('click', () => {
-    q.parentElement.classList.toggle('active');
-  });
-});
-
-/* CASE STUDY SLIDER */
-let caseIndex = 0;
-function slideCase(i) {
-  caseIndex = i;
-  document.getElementById('caseTrack').style.transform =
-    `translateX(-${i * 100}%)`;
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
 }
 
-setInterval(() => {
-  caseIndex = (caseIndex + 1) % 2;
-  slideCase(caseIndex);
-}, 7000);
+let index=0;
+function slideCase(i){
+index=i;
+document.getElementById('caseTrack').style.transform=`translateX(-${i*100}%)`;
+}
+setInterval(()=>{index=(index+1)%2;slideCase(index)},7000);
+
+document.querySelectorAll('.faq-question').forEach(q=>{
+q.onclick=()=>q.parentElement.classList.toggle('active');
+});
 </script>
 
 </body>
