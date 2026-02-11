@@ -5,18 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Our Team | Cedar Acquisitions</title>
-
-<meta name="description" content="Meet the leadership, acquisitions, finance, and technology team behind Cedar Acquisitions.">
-<meta name="robots" content="index, follow">
+<meta name="description" content="Meet the leadership and acquisition professionals behind Cedar Acquisitions.">
 
 <link rel="icon" href="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
 
 <style>
-/* ================= RESET ================= */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
 html{scroll-behavior:smooth}
 
-/* ================= BODY ================= */
 body{
 background:linear-gradient(180deg,#020804,#07150c,#0b2314,#07150c,#020804);
 color:#e5f7ee;
@@ -25,88 +21,176 @@ line-height:1.8;
 
 /* ================= HEADER ================= */
 header{
-position:fixed;top:0;width:100%;height:90px;z-index:1000;
-background:rgba(245,255,250,.92);
+position:fixed;
+top:0;
+width:100%;
+height:80px;
+z-index:1000;
+background:rgba(245,255,250,.95);
 backdrop-filter:blur(14px);
 border-bottom:1px solid rgba(0,0,0,.15);
 }
+
 .header-inner{
-max-width:1400px;margin:auto;height:100%;
-display:flex;align-items:center;padding:0 40px;
+max-width:1400px;
+height:100%;
+margin:auto;
+padding:0 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
-.logo img{height:80px}
-nav{margin-left:auto}
-nav ul{display:flex;gap:28px;list-style:none}
+
+.logo img{
+height:65px;
+}
+
+/* NAVIGATION */
+nav{
+position:relative;
+}
+
+nav ul{
+display:flex;
+gap:28px;
+list-style:none;
+}
+
 nav a{
-color:#064e3b;font-weight:600;text-decoration:none;
-position:relative;padding-bottom:4px;
+color:#064e3b;
+font-weight:600;
+text-decoration:none;
+position:relative;
+padding-bottom:4px;
 }
+
 nav a::after{
-content:"";position:absolute;left:0;bottom:0;
-width:0;height:2px;background:#22c55e;transition:.3s;
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:2px;
+background:#22c55e;
+transition:.3s;
 }
-nav a:hover::after{width:100%}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* HAMBURGER */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:#064e3b;
+}
+
+/* MOBILE NAV */
+@media(max-width:900px){
+nav ul{
+position:absolute;
+top:80px;
+right:0;
+background:#f0fdf4;
+width:100vw;
+flex-direction:column;
+align-items:center;
+padding:30px 0;
+gap:20px;
+display:none;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+nav ul.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+}
 
 /* ================= HERO ================= */
 .hero{
-min-height:70vh;
-padding:200px 60px 120px;
+min-height:65vh;
+padding:160px 20px 100px;
 background:
 linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
 url("https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698221aafa4c3e4e8d5465a8.png")
 center/cover no-repeat;
 }
-.hero-inner{max-width:1000px}
-.hero h1{font-size:52px;margin-bottom:24px}
-.hero p{font-size:21px;color:#bbf7d0}
 
-/* ================= SECTIONS ================= */
-section{padding:120px 60px}
-.section-title{
+.hero-inner{
+max-width:900px;
+margin:auto;
 text-align:center;
-font-size:40px;
-color:#a7f3d0;
+}
+
+.hero h1{
+font-size:42px;
 margin-bottom:20px;
 }
+
+.hero p{
+font-size:18px;
+color:#bbf7d0;
+}
+
+/* ================= SECTIONS ================= */
+section{
+padding:100px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+color:#a7f3d0;
+margin-bottom:15px;
+}
+
 .section-desc{
-max-width:1000px;
-margin:0 auto 80px;
+max-width:900px;
+margin:0 auto 60px;
 text-align:center;
 color:#bbf7d0;
-font-size:19px;
+font-size:17px;
 }
 
 /* ================= TEAM GRID ================= */
 .team-grid{
-max-width:1300px;
+max-width:1200px;
 margin:auto;
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:40px;
+gap:30px;
 }
 
 .team-card{
 background:linear-gradient(180deg,#0c2315,#081a10);
-border-radius:22px;
-padding:36px 30px;
+border-radius:20px;
+padding:30px;
 border:1px solid rgba(255,255,255,.15);
-transition:.4s;
 text-align:center;
+transition:.4s;
 }
+
 .team-card:hover{
-transform:translateY(-10px);
-box-shadow:0 30px 60px rgba(34,197,94,.35);
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(34,197,94,.3);
 }
 
 .team-photo{
-width:130px;
-height:130px;
-margin:0 auto 18px;
+width:110px;
+height:110px;
+margin:0 auto 15px;
 border-radius:50%;
 overflow:hidden;
 border:3px solid rgba(34,197,94,.6);
 background:#052e16;
 }
+
 .team-photo img{
 width:100%;
 height:100%;
@@ -115,78 +199,108 @@ object-fit:cover;
 
 .team-card h3{
 color:#a7f3d0;
-margin-bottom:6px;
-font-size:18px;
+font-size:17px;
+margin-bottom:5px;
 }
+
 .team-role{
 color:#86efac;
 font-weight:600;
-margin-bottom:14px;
-font-size:14px;
+margin-bottom:10px;
+font-size:13px;
 }
+
 .team-card p{
-color:#bbf7d0;
 font-size:14px;
+color:#bbf7d0;
+}
+
+/* RESPONSIVE GRID */
+@media(max-width:1200px){
+.team-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+.team-grid{grid-template-columns:1fr;}
+.hero h1{font-size:30px;}
 }
 
 /* ================= FOOTER ================= */
 footer{
 background:linear-gradient(180deg,#ecfdf5,#d1fae5);
 color:#064e3b;
-padding:90px 60px 50px;
+padding:60px 20px 40px;
 }
+
 .footer-inner{
 max-width:1200px;
 margin:auto;
 display:grid;
-grid-template-columns:1.2fr 1fr 1fr;
-gap:60px;
+grid-template-columns:1fr 1fr 1fr;
+gap:40px;
 }
-.footer-logo img{height:82px}
+
+.footer-logo img{
+height:70px;
+margin-bottom:15px;
+}
+
 .footer-links{
 display:grid;
 grid-template-columns:repeat(2,auto);
-gap:12px 40px;
+gap:10px 30px;
 }
+
 .footer-links a{
 color:#064e3b;
 font-weight:600;
 text-decoration:none;
 position:relative;
-padding-bottom:4px;
+padding-bottom:3px;
 }
+
 .footer-links a::after{
 content:"";
 position:absolute;
-left:0;bottom:0;
-width:0;height:2px;
+left:0;
+bottom:0;
+width:0;
+height:2px;
 background:#22c55e;
 transition:.3s;
 }
-.footer-links a:hover::after{width:100%}
 
-/* ================= RESPONSIVE ================= */
-@media(max-width:1200px){
-.team-grid{grid-template-columns:repeat(2,1fr)}
+.footer-links a:hover::after{
+width:100%;
 }
-@media(max-width:768px){
-.team-grid{grid-template-columns:1fr}
-nav ul{display:none}
-.hero h1{font-size:40px}
+
+/* MOBILE FOOTER */
+@media(max-width:900px){
+.footer-inner{
+grid-template-columns:1fr;
+text-align:center;
 }
+
+.footer-links{
+justify-content:center;
+}
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
 <header>
 <div class="header-inner">
+
 <div class="logo">
-<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png" alt="Cedar Acquisitions Logo">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
 </div>
+
 <nav>
-<ul>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="navLinks">
 <li><a href="https://www.cedaracq.com/#strategies">Strategies</a></li>
 <li><a href="https://www.cedaracq.com/#cases">Case Studies</a></li>
 <li><a href="https://www.cedaracq.com/#faq">FAQs</a></li>
@@ -194,100 +308,87 @@ nav ul{display:none}
 <li><a href="https://www.cedaracq.com/#contact">Contact</a></li>
 </ul>
 </nav>
+
 </div>
 </header>
 
-<!-- ================= HERO ================= -->
 <section class="hero">
 <div class="hero-inner">
 <h1>Our Team</h1>
-<p>
-Cedar Acquisitions is built by professionals across acquisitions,
-finance, technology, and analytics — aligned around disciplined execution.
-</p>
+<p>Professionals across acquisitions, finance, analytics, and technology driving Cedar’s execution excellence.</p>
 </div>
 </section>
 
-<!-- ================= TEAM SECTION ================= -->
 <section>
 <h2 class="section-title">Leadership & Execution Team</h2>
-<p class="section-desc">
-Our multidisciplinary team enables Cedar to structure, analyze, and execute
-complex real estate transactions with speed and certainty.
-</p>
+<p class="section-desc">Experienced professionals aligned around disciplined underwriting and structured real estate solutions.</p>
 
 <div class="team-grid">
 
-<!-- TEAM MEMBER 1 -->
+<!-- Repeat cards as needed -->
+
 <div class="team-card">
-<div class="team-photo"><img src="images/michael-moughames.jpg" alt="Michael Moughames"></div>
+<div class="team-photo"><img src="images/michael-moughames.jpg"></div>
 <h3>Michael Moughames</h3>
 <div class="team-role">Acquisition Director</div>
-<p>Leads deal sourcing, underwriting, and negotiation across national markets.</p>
+<p>Leads sourcing and underwriting across target markets.</p>
 </div>
 
-<!-- TEAM MEMBER 2 -->
 <div class="team-card">
-<div class="team-photo"><img src="images/nicolas-faure.jpg" alt="Nicolas Faure"></div>
+<div class="team-photo"><img src="images/nicolas-faure.jpg"></div>
 <h3>Nicolas Faure</h3>
 <div class="team-role">Chief Financial Officer (CFO)</div>
-<p>Oversees financial strategy, capital structure, and risk management.</p>
+<p>Oversees financial strategy and capital structure.</p>
 </div>
 
-<!-- TEAM MEMBER 3 -->
 <div class="team-card">
-<div class="team-photo"><img src="images/joseph-mckenzie.jpg" alt="Joseph McKenzie"></div>
+<div class="team-photo"><img src="images/joseph-mckenzie.jpg"></div>
 <h3>Joseph McKenzie</h3>
 <div class="team-role">Acquisition Director</div>
-<p>Manages acquisitions, valuation, and seller relationships.</p>
+<p>Manages acquisitions and seller negotiations.</p>
 </div>
 
-<!-- TEAM MEMBER 4 -->
 <div class="team-card">
-<div class="team-photo"><img src="images/awais-majeed.jpg" alt="Awais Majeed"></div>
+<div class="team-photo"><img src="images/awais-majeed.jpg"></div>
 <h3>Awais Majeed</h3>
-<div class="team-role">Chief Technical Officer (CTO)</div>
-<p>Leads technology infrastructure, automation, and data systems.</p>
+<div class="team-role">Chief Technical Officer</div>
+<p>Leads technology systems and automation.</p>
 </div>
 
-<!-- TEAM MEMBER 5 -->
 <div class="team-card">
-<div class="team-photo"><img src="images/fahad-ali.jpg" alt="Fahad Ali"></div>
+<div class="team-photo"><img src="images/fahad-ali.jpg"></div>
 <h3>Fahad Ali</h3>
 <div class="team-role">Data Analyst</div>
-<p>Provides market intelligence, deal analytics, and performance modeling.</p>
+<p>Provides analytics and market modeling.</p>
 </div>
 
-<!-- TEAM MEMBER 6 -->
 <div class="team-card">
-<div class="team-photo"><img src="images/rushil-gandhi.jpg" alt="Rushil Gandhi"></div>
+<div class="team-photo"><img src="images/rushil-gandhi.jpg"></div>
 <h3>Rushil Gandhi</h3>
 <div class="team-role">Acquisition Manager</div>
-<p>Supports acquisition execution and transaction coordination.</p>
+<p>Supports deal execution and coordination.</p>
 </div>
 
-<!-- TEAM MEMBER 7 -->
 <div class="team-card">
-<div class="team-photo"><img src="images/moksh-patel.jpg" alt="Moksh Patel"></div>
+<div class="team-photo"><img src="images/moksh-patel.jpg"></div>
 <h3>Moksh Patel</h3>
 <div class="team-role">Acquisition Manager</div>
-<p>Assists with underwriting, market research, and seller outreach.</p>
+<p>Assists in underwriting and outreach.</p>
 </div>
 
-<!-- TEAM MEMBER 8 -->
 <div class="team-card">
-<div class="team-photo"><img src="images/millie-adams.jpg" alt="Millie Adams"></div>
+<div class="team-photo"><img src="images/millie-adams.jpg"></div>
 <h3>Millie Adams</h3>
 <div class="team-role">Acquisition Assistant</div>
-<p>Supports deal operations, documentation, and internal coordination.</p>
+<p>Coordinates documentation and operations.</p>
 </div>
 
 </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer>
 <div class="footer-inner">
+
 <div>
 <div class="footer-logo">
 <img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
@@ -310,8 +411,15 @@ complex real estate transactions with speed and certainty.
 <p>© 2026 Cedar Acquisitions</p>
 <p>All rights reserved.</p>
 </div>
+
 </div>
 </footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
