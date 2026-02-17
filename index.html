@@ -1,7 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cedar Acquisitions | Institutional Real Estate Investment Firm</title>
+
+<meta name="description" content="Cedar Acquisitions is a U.S.-based real estate investment firm specializing in seller financing, subject-to acquisitions, wrap mortgages, and structured real estate exits.">
+
+<link rel="icon" href="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
 /* ================= RESET ================= */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
 html{scroll-behavior:smooth}
 
+/* ================= BODY ================= */
 body{
 background:linear-gradient(180deg,#020804,#07150c,#0b2314,#07150c,#020804);
 color:#e5f7ee;
@@ -9,7 +25,7 @@ line-height:1.85;
 overflow-x:hidden;
 }
 
-/* ================= HEADER ================= */
+/* ================= HEADER (DESKTOP UNCHANGED) ================= */
 header{
 position:fixed;
 top:0;
@@ -33,6 +49,7 @@ justify-content:space-between;
 
 .logo img{height:58px}
 
+/* NAV */
 nav ul{
 display:flex;
 gap:32px;
@@ -66,7 +83,7 @@ cursor:pointer;
 color:#064e3b;
 }
 
-/* ===== MOBILE NAV ONLY CHANGE ===== */
+/* ================= MOBILE NAV (ONLY CHANGE) ================= */
 @media(max-width:950px){
 .menu-toggle{display:block}
 nav ul{
@@ -93,7 +110,7 @@ border-bottom:1px solid rgba(0,0,0,.12);
 }
 }
 
-/* ================= HERO ================= */
+/* ================= HERO (AS IT WAS) ================= */
 .hero{
 min-height:100vh;
 padding:150px 40px 120px;
@@ -109,10 +126,8 @@ align-items:center;
 max-width:1000px;
 margin:auto;
 text-align:center;
-animation:fadeUp 1.2s ease;
 }
 
-/* 🔥 FIXED DESKTOP HERO SIZE */
 .hero h1{
 font-size:54px;
 margin-bottom:25px;
@@ -145,6 +160,7 @@ color:#a7f3d0;
 margin-bottom:18px;
 }
 
+/* ================= GRIDS ================= */
 .grid-3,.grid-2{
 max-width:1200px;
 margin:auto;
@@ -175,7 +191,7 @@ color:#a7f3d0;
 margin-bottom:15px;
 }
 
-/* ================= CASE STUDIES ================= */
+/* ================= CASE STUDIES (AS IT WAS) ================= */
 .case-slider{max-width:1100px;margin:auto;overflow:hidden}
 .case-track{display:flex;transition:transform .6s ease}
 .case-slide{
@@ -193,8 +209,17 @@ box-shadow:0 25px 45px rgba(0,0,0,.5);
 @media(max-width:950px){
 .case-slide{grid-template-columns:1fr}
 }
+.case-nav{text-align:center;margin-top:25px}
+.case-nav button{
+background:#22c55e;
+border:none;
+padding:8px 14px;
+border-radius:50%;
+margin:0 6px;
+cursor:pointer;
+}
 
-/* ================= FAQ ================= */
+/* ================= FAQ (AS IT WAS) ================= */
 .faq-item{
 background:#0c2315;
 border-radius:12px;
@@ -233,13 +258,12 @@ animation:fadeUp .9s ease both;
 .review:nth-child(3){animation-delay:.4s}
 .review p{font-style:italic}
 
-/* ================= FOOTER ================= */
+/* ================= FOOTER (AS IT WAS) ================= */
 footer{
 background:linear-gradient(180deg,#ecfdf5,#d1fae5);
 color:#064e3b;
 padding:80px 20px 40px;
 }
-
 .footer-inner{
 max-width:1200px;
 margin:auto;
@@ -247,25 +271,20 @@ display:grid;
 grid-template-columns:1fr 1fr 1fr;
 gap:45px;
 }
-
 .footer-links{
 display:grid;
 grid-template-columns:repeat(2,auto);
 gap:12px 30px;
 }
-
 .footer-links a{
 color:#064e3b;
 text-decoration:none;
 font-weight:600;
 }
 
-/* 🔥 MOBILE FOOTER FIX → KEEP 2 COLUMNS */
+/* MOBILE FOOTER: KEEP 2 COLUMNS */
 @media(max-width:950px){
-.footer-inner{
-grid-template-columns:1fr;
-text-align:center;
-}
+.footer-inner{grid-template-columns:1fr;text-align:center}
 .footer-links{
 grid-template-columns:repeat(2,1fr);
 max-width:280px;
@@ -276,31 +295,10 @@ text-align:left;
 
 /* ================= MOBILE HERO OPTIMIZATION ================= */
 @media(max-width:768px){
-
-.hero{
-padding:110px 16px 60px;
-}
-
-.hero h1{
-font-size:28px;
-line-height:1.25;
-margin-bottom:16px;
-}
-
-.hero p{
-font-size:16px;
-margin-bottom:26px;
-}
-
-.hero-btn{
-width:100%;
-max-width:320px;
-padding:14px 0;
-font-size:16px;
-}
-
-.section-title{font-size:28px}
-.card{padding:24px}
+.hero{padding:110px 16px 60px}
+.hero h1{font-size:28px;line-height:1.25}
+.hero p{font-size:16px}
+.hero-btn{width:100%;max-width:320px;padding:14px 0}
 }
 
 /* ================= ANIMATION ================= */
@@ -308,4 +306,162 @@ font-size:16px;
 from{opacity:0;transform:translateY(30px)}
 to{opacity:1;transform:translateY(0)}
 }
-sssss
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-inner">
+<div class="logo">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png">
+</div>
+<nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="navLinks">
+<li><a href="#strategies">Strategies</a></li>
+<li><a href="#cases">Case Studies</a></li>
+<li><a href="#faq">FAQs</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-inner">
+<h1>Strategic Real Estate Acquisitions Built for Certainty, Speed & Long-Term Value</h1>
+<p>Cedar Acquisitions partners with property owners nationwide to deliver flexible, tax-efficient exit strategies.</p>
+<a href="#contact" class="hero-btn">Start a Confidential Conversation</a>
+</div>
+</section>
+
+<!-- WHY CHOOSE CEDAR -->
+<section>
+<h2 class="section-title">Why Choose Cedar Acquisitions</h2>
+<div class="grid-3">
+<div class="card"><h3>Institutional Underwriting</h3><p>Risk-adjusted financial modeling and legal review.</p></div>
+<div class="card"><h3>Creative Structures</h3><p>Seller finance, subject-to, wraps & hybrid solutions.</p></div>
+<div class="card"><h3>Certainty of Close</h3><p>Dedicated capital ensures execution.</p></div>
+</div>
+</section>
+
+<!-- INVESTMENT STRATEGIES -->
+<section id="strategies">
+<h2 class="section-title">Investment Strategies</h2>
+<div class="grid-2">
+<div class="card"><h3>Seller Financing</h3><p>Convert equity into secured income with professionally reviewed documentation.</p></div>
+<div class="card"><h3>Subject-To Acquisitions</h3><p>Preserve existing financing while transferring ownership.</p></div>
+<div class="card"><h3>Wrap Mortgages</h3><p>Single structured payment with yield optimization.</p></div>
+<div class="card"><h3>Hybrid Structures</h3><p>Upfront liquidity combined with backend participation.</p></div>
+</div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+<h2 class="section-title">Case Studies</h2>
+
+<div class="case-slider">
+<div class="case-track" id="caseTrack">
+
+<div class="case-slide">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b5dee0708e42c8501a863.jpeg">
+<div>
+<h3>Florida Investment Property</h3>
+<p>Structured acquisition delivering liquidity without loan disruption.</p>
+</div>
+</div>
+
+<div class="case-slide">
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b5d3d52c952d436b92307.webp">
+<div>
+<h3>Virginia Estate Sale</h3>
+<p>Seller-financed transaction completed on accelerated timeline.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="case-nav">
+<button onclick="slideCase(0)">•</button>
+<button onclick="slideCase(1)">•</button>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section>
+<h2 class="section-title">What Clients Say</h2>
+<div class="grid-3">
+<div class="card review"><p>“Cedar delivered exactly what was structured — no delays, no retrades.”</p><h3>— Private Seller, Florida</h3></div>
+<div class="card review"><p>“Professional, attorney-reviewed, and executed with precision.”</p><h3>— Estate Representative, Virginia</h3></div>
+<div class="card review"><p>“Certainty of close was the deciding factor.”</p><h3>— Investment Owner, Texas</h3></div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="faq-item"><div class="faq-question">Who pays closing costs?</div><div class="faq-answer">Cedar typically covers standard closing costs.</div></div>
+<div class="faq-item"><div class="faq-question">How quickly can Cedar close?</div><div class="faq-answer">Closings typically occur within 7–30 days.</div></div>
+<div class="faq-item"><div class="faq-question">Do you buy properties as-is?</div><div class="faq-answer">Yes. No repairs required.</div></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact Cedar Acquisitions</h2>
+<iframe src="https://api.leadconnectorhq.com/widget/form/h0ri58p25Mqmo7aQXF2F" style="width:100%;height:750px;border:none;"></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-inner">
+<div>
+<img src="https://storage.googleapis.com/msgsndr/fEWmlCJZ5c5vLmh918dl/media/698b53f61fe1663ade557780.png" height="60">
+<p>4874 NW 97th Pl, Doral, Florida 33178</p>
+<p>Phone: 754-287-5130</p>
+<p>Email: offers@cedaracq.com</p>
+</div>
+
+<div class="footer-links">
+<a href="#strategies">Strategies</a>
+<a href="#cases">Case Studies</a>
+<a href="#faq">FAQs</a>
+<a href="team.html">Team</a>
+<a href="#contact">Contact</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms-and-conditions.html">Terms & Conditions</a>
+</div>
+
+<div>
+<p>© 2026 Cedar Acquisitions</p>
+<p>All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("active");
+}
+document.querySelectorAll('#navLinks a').forEach(link=>{
+link.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('active'));
+});
+
+let index=0;
+function slideCase(i){
+index=i;
+document.getElementById('caseTrack').style.transform=`translateX(-${i*100}%)`;
+}
+setInterval(()=>{index=(index+1)%2;slideCase(index)},7000);
+
+document.querySelectorAll('.faq-question').forEach(q=>{
+q.onclick=()=>q.parentElement.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
